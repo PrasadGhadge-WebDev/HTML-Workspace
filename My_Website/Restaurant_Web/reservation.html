@@ -5,46 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make a Reservation</title>
 </head>
-<body>
-    <nav>
-        <img width="60" src="https://static.vecteezy.com/system/resources/previews/036/289/037/original/delicious-food-corner-minimalist-logo-design-vector.jpg" alt="Food Corner">
-        <a href="home.html">Home</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="menu.html">Menu</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="Today's_Special.html">Today's Special</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="contact.html">Contact</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="reservation.html">Reservation</a>
-    </nav><hr>
-    <h1 align="center">Make a Reservation</h1><hr>
+<body style="font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; color: #333;">
+    <nav style="text-align: center; font-weight: bold; background-color: #f4f4f4; padding: 12px; border-radius: 8px;">
+        <a href="home.html" style="color: #007bff; text-decoration: none;">Home</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="menu.html" style="color: #007bff; text-decoration: none;">Menu</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="Today's_Special.html" style="color: #007bff; text-decoration: none;">Today's Special</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="contact.html" style="color: #007bff; text-decoration: none;">Contact</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="reservation.html" style="color: #007bff; text-decoration: none;">Reservation</a>
+    </nav><hr style="border: 1px solid #ddd;">
+    <h1 align="center" style="background-color: aqua; color: white; border-radius: 15px; padding: 12px;">Make a Reservation</h1><hr style="border: 1px solid #ddd;">
 
-    <marquee><p><b>Reserve your table at Food Corner and enjoy a wonderful dining experience!</b></p></marquee>
+    <marquee style="font-style: italic; font-weight: bold; color: darkred; background-color: #fef08a; padding: 8px; border-radius: 8px;">Reserve your table at Food Corner and enjoy a wonderful dining experience!</marquee>
 
-    <h2>Reservation Form</h2>
+    <h2 style="color: #333; border-left: 5px solid aqua; padding-left: 10px;">Reservation Form</h2>
 
     <form>
-        <fieldset>
-            <legend>Personal Information</legend>
+        <fieldset style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: #f9f9f9;">
+            <legend style="font-weight: bold; color: #007bff; padding: 0 5px;">Personal Information</legend>
 
             <label><b>Full Name:</b></label><br>
-            <input type="text" name="fullname" placeholder="Enter your full name" required><br><br>
+            <input type="text" name="fullname" placeholder="Enter your full name" required style="width: 100%; max-width: 400px; padding: 8px; border-radius: 6px; border: 1px solid #ccc; margin-top: 4px;"><br><br>
 
             <label><b>Email Address:</b></label><br>
-            <input type="email" name="email" placeholder="Enter your email address" required><br><br>
+            <input type="email" name="email" placeholder="Enter your email address" required style="width: 100%; max-width: 400px; padding: 8px; border-radius: 6px; border: 1px solid #ccc; margin-top: 4px;"><br><br>
 
             <label><b>Phone Number:</b></label><br>
-            <input type="tel" name="phone" placeholder="Enter your contact number" required><br><br>
+            <input type="tel" name="phone" placeholder="Enter your contact number" required style="width: 100%; max-width: 400px; padding: 8px; border-radius: 6px; border: 1px solid #ccc; margin-top: 4px;"><br><br>
         </fieldset><br>
 
-        <fieldset>
-            <legend>Reservation Details</legend>
+        <fieldset style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: #f9f9f9;">
+            <legend style="font-weight: bold; color: #007bff; padding: 0 5px;">Reservation Details</legend>
 
             <label><b>Date of Reservation:</b></label><br>
-            <input type="date" name="reservation_date" required><br><br>
+            <input type="date" name="reservation_date" required style="padding: 8px; border-radius: 6px; border: 1px solid #ccc; margin-top: 4px;"><br><br>
 
             <label><b>Time:</b></label><br>
-            <input type="time" name="reservation_time" required><br><br>
+            <input type="time" name="reservation_time" required style="padding: 8px; border-radius: 6px; border: 1px solid #ccc; margin-top: 4px;"><br><br>
 
             <label><b>Number of Guests:</b></label><br>
-            <select name="guests">
+            <select name="guests" style="padding: 8px; border-radius: 6px; border: 1px solid #ccc; margin-top: 4px;">
                 <option value="1">1 Person</option>
                 <option value="2">2 People</option>
                 <option value="3">3 People</option>
@@ -57,8 +56,8 @@
             </select><br><br>
         </fieldset><br>
 
-        <fieldset>
-            <legend>Additional Information</legend>
+        <fieldset style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: #f9f9f9;">
+            <legend style="font-weight: bold; color: #007bff; padding: 0 5px;">Additional Information</legend>
 
             <label><b>Occasion:</b></label><br>
             <input type="radio" name="occasion" value="birthday"> Birthday
@@ -74,24 +73,24 @@
             <input type="checkbox" name="seating" value="outdoor"> Outdoor (if available)<br><br>
 
             <label><b>Special Requests:</b></label><br>
-            <textarea name="requests" rows="4" cols="40" placeholder="Any dietary restrictions or special requests?"></textarea><br><br>
+            <textarea name="requests" rows="4" placeholder="Any dietary restrictions or special requests?" style="width: 100%; max-width: 400px; padding: 8px; border-radius: 6px; border: 1px solid #ccc; margin-top: 4px; font-family: inherit;"></textarea><br><br>
         </fieldset><br>
 
-        <fieldset>
-            <legend>Confirmation</legend>
+        <fieldset style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: #f9f9f9;">
+            <legend style="font-weight: bold; color: #007bff; padding: 0 5px;">Confirmation</legend>
 
             <input type="checkbox" name="agree" required> I agree to the cancellation policy
             <br><br>
 
-            <input type="submit" value="Confirm Reservation">
-            <input type="reset" value="Clear Form">
+            <input type="submit" value="Confirm Reservation" style="background-color: aqua; color: white; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; margin-right: 10px;">
+            <input type="reset" value="Clear Form" style="background-color: #ccc; color: black; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer;">
         </fieldset>
     </form><br>
 
-    <hr>
+    <hr style="border: 1px solid #ddd;">
 
-    <h2>Reservation Policies</h2>
-    <ul>
+    <h2 style="color: #333; border-left: 5px solid aqua; padding-left: 10px;">Reservation Policies</h2>
+    <ul style="line-height: 1.8;">
         <li>Reservations can be made up to 3 months in advance</li>
         <li>We require a 24-hour cancellation notice</li>
         <li>Walk-ins are always welcome</li>
@@ -100,16 +99,16 @@
         <li>Special requests will be accommodated based on availability</li>
     </ul>
 
-    <hr>
+    <hr style="border: 1px solid #ddd;">
 
-    <h2>Contact Us for Reservations</h2>
-    <p>
+    <h2 style="color: #333; border-left: 5px solid aqua; padding-left: 10px;">Contact Us for Reservations</h2>
+    <p style="line-height: 1.8;">
         <b>Phone:</b> +91 9766875355<br>
         <b>Email:</b> reservations@foodcorner.com<br>
         <b>Hours:</b> Monday to Sunday, 10:00 AM - 10:00 PM
     </p>
 
-    <hr>
+    <hr style="border: 1px solid #ddd;">
 
     <p><b>We look forward to hosting you at Food Corner!</b></p>
 </body>
