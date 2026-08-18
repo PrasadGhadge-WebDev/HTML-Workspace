@@ -7,41 +7,80 @@
     <title>Home Page</title>
 </head>
 
-<body style="font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; color: #333;">
+<body>
+<nav style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 20px 18px;
+    padding: 10px;
+    background-color: #447184;
+    border-radius: 10px;
+    font-family: 'Times New Roman';
+    font-size: 19px;
+">
 
-    <nav style="text-align: center; font-weight: bold; background-color: #f4f4f4; padding: 12px; border-radius: 8px;">
-        <a href="home.html" style="color: #007bff; text-decoration: none;">Home</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="menu.html" style="color: #007bff; text-decoration: none;">Menu</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="Today's_Special.html" style="color: #007bff; text-decoration: none;">Today's Special</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="contact.html" style="color: #007bff; text-decoration: none;">Contact</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="reservation.html" style="color: #007bff; text-decoration: none;">Reservation</a>
-    </nav>
+    <a href="home.html" style="color: white;">Home</a>
+    <span style="color: white;">|</span>
 
-    <hr style="border: 1px solid #ddd;">
+    <a href="menu.html" style="color: white;">Menu</a>
+    <span style="color: white;">|</span>
 
-    <h1 align="center" style="background-color: aqua; color: white; border-radius: 15px; padding: 12px;">Welcome to Food Corner</h1>
-    <hr style="border: 1px solid #ddd;">
+    <a href="Today's_Special.html" style="color: white;">Today's Special</a>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-    <marquee style="font-style: italic; font-weight: bold; color: darkred; background-color: #fef08a; padding: 8px; border-radius: 8px;">“Delicious Food, Happy Moments!”</marquee>
+    <span style="color: yellow;">Food Corner</span>
 
-    <p style="font-size: 16px; line-height: 1.6;">
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="contact.html" style="color: white;">Contact</a>
+    <span style="color: white;">|</span>
+
+    <a href="reservation.html" style="color: white;">Reservation</a>
+    <span style="color: white;">|</span>
+
+    <a href="about.html" style="color: white;">About</a>
+
+</nav>
+
+    
+    <div style="display:flex; align-items:center; justify-content:center; position:relative; margin:20px 0;">
+    
+    <a href="../index.html" style="position:absolute; left:0; text-decoration:none; background:#eee; padding:8px 14px; border:1px solid #999; border-radius:6px; color:black;">
+        Back
+    </a>
+
+    <h2 style="margin:0;">
+        Welcome to Food Corner
+    </h2>
+    </div>
+
+    <marquee>“Delicious Food, Happy Moments!”</marquee>
+
+    <p>
         Welcome to Food Corner, where delicious food meets great taste
         and a warm atmosphere. We serve the finest food with exceptional service.
     </p>
 
-    <img width="600" src="https://tse1.mm.bing.net/th/id/OIP.b_1990iz0XgGlfY5v1lR3gHaEZ?r=0&pid=Api&h=220&P=0"
-        alt="Food Corner" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+    <img
+        width="600"
+        src="https://tse1.mm.bing.net/th/id/OIP.b_1990iz0XgGlfY5v1lR3gHaEZ?r=0&pid=Api&h=220&P=0"
+        alt="Food Corner"
+    >
 
-    <hr style="border: 1px solid #ddd;">
+    <hr>
 
-    <h2 style="color: #333; border-left: 5px solid aqua; padding-left: 10px;">Our Motto</h2>
-    <p><b>• Fresh • Delicious • Quality •</b></p>
+    <h2>Our Motto</h2>
 
-    <hr style="border: 1px solid #ddd;">
+    <p>
+        <b>• Fresh • Delicious • Quality •</b>
+    </p>
 
-    <h2 style="color: #333; border-left: 5px solid aqua; padding-left: 10px;">About Food Corner</h2>
+    <hr>
 
-    <p style="font-size: 15px; line-height: 1.6;">
+    <h2>About Food Corner</h2>
+
+    <p>
         Food Corner is a friendly restaurant serving fresh, delicious
         and quality food since 2010. We offer a variety of tasty dishes including
         pizza, burgers, pasta, salads and desserts. Our chef uses only the finest ingredients
@@ -49,11 +88,11 @@
         food and a memorable dining experience for all our customers.
     </p>
 
-    <hr style="border: 1px solid #ddd;">
+    <hr>
 
-    <h2 style="color: #333; border-left: 5px solid aqua; padding-left: 10px;">Why Choose Food Corner?</h2>
+    <h2>Why Choose Food Corner?</h2>
 
-    <ul style="line-height: 1.8;">
+    <ul>
         <li>Fresh Ingredients sourced locally</li>
         <li>Delicious Taste prepared by expert chefs</li>
         <li>Quality Service with friendly staff</li>
@@ -63,16 +102,19 @@
         <li>Special Discounts for regular customers</li>
     </ul>
 
-    <hr style="border: 1px solid #ddd;">
+    <hr>
 
-    <h2 style="color: #333; border-left: 5px solid aqua; padding-left: 10px;">Operating Hours</h2>
-    <p style="line-height: 1.8;">
-        <b>Monday to Thursday:</b> 11:00 AM - 10:00 PM<br>
-        <b>Friday to Saturday:</b> 11:00 AM - 11:00 PM<br>
+    <h2>Operating Hours</h2>
+
+    <p>
+        <b>Monday to Thursday:</b> 11:00 AM - 10:00 PM
+        <br>
+        <b>Friday to Saturday:</b> 11:00 AM - 11:00 PM
+        <br>
         <b>Sunday:</b> 12:00 PM - 9:00 PM
     </p>
 
-    <hr style="border: 1px solid #ddd;">
+    <hr>
 
     <p>
         <b>Visit us today and experience the best food in town!</b>
