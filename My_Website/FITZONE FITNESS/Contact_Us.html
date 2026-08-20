@@ -3,36 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us | FITZONE FITNESS</title>
+    <meta name="description" content="Get in touch with FITZONE FITNESS Pune. Visit our facility, call us, or send an inquiry for membership plans and personal training sessions.">
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
-     <nav>
-        <a href="index.html">Home</a>|
-        <a href="about.html">About</a>|
-        <a href="our_trainers.html">Our Trainers</a>|
-        <a href="membership_plans.html">Membership Plans</a>|
-        <a href="our_services.html">Our Services</a>|
-        <a href="workout_programs.html">Workout Programs</a>|
-        <a href="gallery.html">Gallery</a>|
-        <a href="contact_us.html">Contact Us</a>   
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                FITZONE <span>FITNESS</span>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Our_Trainers.html">Trainers</a></li>
+                <li><a href="Membership_Plans.html">Membership</a></li>
+                <li><a href="Our_Services.html">Services</a></li>
+                <li><a href="Workout_Programs.html">Programs</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact_Us.html" class="active">Contact</a></li>
+                <li><a href="Contact_Us.html" class="nav-cta">Join Now</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
-        <h1>Get In Touch</h1>
+    <main class="container">
+        <div class="page-header">
+            <span class="hero-subtitle">Get In Touch</span>
+            <h1>Start Your <span>Transformation</span></h1>
+            <p>Have questions about membership plans, personal training, or facilities? Reach out to our team today.</p>
+        </div>
 
-        <section>
-            <h2>Contact Details</h2>
-            <p><strong>Address:</strong> Main Road, Pune, Maharashtra</p>
-            <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
-            <p><strong>Email:</strong> <a href="mailto:fitzonefitness@gmail.com">fitzonefitness@gmail.com</a></p>
-        </section>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h3>Location Address</h3>
+                        <p>FITZONE FITNESS Center, Main Road, Pune, Maharashtra 411001</p>
+                    </div>
+                </div>
 
-        <section>
-            <h2>Opening Hours</h2>
-            <p><strong>Monday - Saturday:</strong> 6:00 AM - 10:00 PM</p>
-            <p><strong>Sunday:</strong> 7:00 AM - 1:00 PM</p>
-        </section>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <h3>Phone & WhatsApp</h3>
+                        <p><a href="tel:+919876543210" style="color: var(--primary); font-weight: 700;">+91 98765 43210</a></p>
+                        <p>Available for inquiry 6 AM - 10 PM</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div>
+                        <h3>Email Support</h3>
+                        <p><a href="mailto:fitzonefitness@gmail.com">fitzonefitness@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">⏰</div>
+                    <div>
+                        <h3>Working Hours</h3>
+                        <p><strong>Monday – Saturday:</strong> 6:00 AM – 10:00 PM</p>
+                        <p><strong>Sunday:</strong> 7:00 AM – 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a <span>Message</span></h2>
+                <p style="margin-bottom: 1.5rem;">Fill out the form below to book a free trial session or inquire about plans.</p>
+
+                <form id="fitzoneContactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailAddr">Email Address</label>
+                        <input type="email" id="emailAddr" class="form-control" placeholder="e.g. rahul@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNum">Phone Number</label>
+                        <input type="tel" id="phoneNum" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="planSelect">Interested Plan / Service</label>
+                        <select id="planSelect" class="form-control">
+                            <option value="General Inquiry">General Inquiry / Free Trial</option>
+                            <option value="Basic">Basic Plan (₹999 / Month)</option>
+                            <option value="Premium">Premium Plan (₹1,499 / Month)</option>
+                            <option value="VIP">VIP Plan (₹2,499 / Month)</option>
+                            <option value="Personal Training">Personal Training Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="msgContent">Your Message / Fitness Goals</label>
+                        <textarea id="msgContent" class="form-control" placeholder="Tell us about your fitness goals..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Submit Inquiry</button>
+                </form>
+
+                <div id="formSuccessAlert" style="display: none; margin-top: 1.5rem; padding: 1rem; background: rgba(201, 244, 73, 0.15); border: 1px solid var(--primary); border-radius: var(--radius-sm); color: var(--primary); font-weight: 600; text-align: center;">
+                    🎉 Thank you! Your message has been received. Our team will contact you shortly.
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⚡</span> FITZONE <span>FITNESS</span>
+                </a>
+                <p>Your premier destination for health, strength, and transformation. Achieve your goals with expert guidance.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Our_Trainers.html">Our Trainers</a></li>
+                    <li><a href="Membership_Plans.html">Membership Plans</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="Workout_Programs.html">Strength Training</a></li>
+                    <li><a href="Workout_Programs.html">Weight Loss</a></li>
+                    <li><a href="Workout_Programs.html">Muscle Building</a></li>
+                    <li><a href="Our_Services.html">Cardio & Yoga</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📍 Main Road, Pune, MH</li>
+                    <li>📞 +91 98765 43210</li>
+                    <li>✉️ fitzonefitness@gmail.com</li>
+                    <li>⏰ Mon - Sat: 6 AM - 10 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FITZONE FITNESS. All rights reserved.</p>
+            <p>Designed for peak athletic performance.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Check URL parameters for selected plan
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const planParam = urlParams.get('plan');
+            if (planParam) {
+                const planSelect = document.getElementById('planSelect');
+                for (let option of planSelect.options) {
+                    if (option.value.toLowerCase() === planParam.toLowerCase()) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            }
+        });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('fitzoneContactForm');
+            const alertBox = document.getElementById('formSuccessAlert');
+            form.style.display = 'none';
+            alertBox.style.display = 'block';
+        }
+    </script>
 </body>
 </html>

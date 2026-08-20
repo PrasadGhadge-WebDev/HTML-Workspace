@@ -3,39 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Trainers</title>
+    <title>Our Certified Trainers | FITZONE FITNESS</title>
+    <meta name="description" content="Meet our certified fitness coaches and personal trainers at FITZONE FITNESS Pune. Expert guidance in strength training, weight loss, and athletic performance.">
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>|
-        <a href="about.html">About</a>|
-        <a href="our_trainers.html">Our Trainers</a>|
-        <a href="membership_plans.html">Membership Plans</a>|
-        <a href="our_services.html">Our Services</a>|
-        <a href="workout_programs.html">Workout Programs</a>|
-        <a href="gallery.html">Gallery</a>|
-        <a href="contact_us.html">Contact Us</a>   
-    </nav><hr>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                FITZONE <span>FITNESS</span>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Our_Trainers.html" class="active">Trainers</a></li>
+                <li><a href="Membership_Plans.html">Membership</a></li>
+                <li><a href="Our_Services.html">Services</a></li>
+                <li><a href="Workout_Programs.html">Programs</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+                <li><a href="Contact_Us.html" class="nav-cta">Join Now</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
-        <section>
-            <h1>Rahul Patil</h1>
-            <b>Certified Fitness Trainer</b>
-            <p>Specialist in strength training and muscle building.</p>
-        </section>
+    <main class="container">
+        <div class="page-header">
+            <span class="hero-subtitle">World-Class Coaching</span>
+            <h1>Meet Our Certified <span>Fitness Coaches</span></h1>
+            <p>Our team of dedicated, internationally certified trainers are here to guide, motivate, and accelerate your fitness goals.</p>
+        </div>
 
-        <section>
-            <h1>Sneha Sharma</h1>
-            <b>Personal Fitness Trainer</b>
-            <p>Specialist in weight loss, cardio and women's fitness.</p>
-        </section>
+        <div class="grid-3">
+            <div class="card">
+                <span class="card-badge">Head Coach</span>
+                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80" alt="Rahul Patil" class="card-image">
+                <h3>Rahul Patil</h3>
+                <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Certified Strength & Hypertrophy Specialist</p>
+                <p>8+ years of experience helping clients build lean muscle mass, master compound movements, and achieve body transformations.</p>
+                <a href="Contact_Us.html" class="btn btn-secondary btn-block" style="margin-top: 1rem;">Book 1-on-1 Session</a>
+            </div>
 
-        <section>
-            <h1>Akash More</h1>
-            <b>Strength &amp; Conditioning Coach</b>
-            <p>Specialist in strength, endurance and athletic training.</p>
-        </section>
+            <div class="card">
+                <span class="card-badge">Fat Loss Lead</span>
+                <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=600&q=80" alt="Sneha Sharma" class="card-image">
+                <h3>Sneha Sharma</h3>
+                <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Personal Fitness & Nutritionist</p>
+                <p>Specialist in sustainable weight management, HIIT conditioning, posture correction, and tailored meal planning.</p>
+                <a href="Contact_Us.html" class="btn btn-secondary btn-block" style="margin-top: 1rem;">Book 1-on-1 Session</a>
+            </div>
+
+            <div class="card">
+                <span class="card-badge">Athletic Performance</span>
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Akash More" class="card-image">
+                <h3>Akash More</h3>
+                <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Strength & Conditioning Coach</p>
+                <p>Focuses on explosive power, stamina, mobility work, and high-intensity interval training for peak athletic performance.</p>
+                <a href="Contact_Us.html" class="btn btn-secondary btn-block" style="margin-top: 1rem;">Book 1-on-1 Session</a>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⚡</span> FITZONE <span>FITNESS</span>
+                </a>
+                <p>Your premier destination for health, strength, and transformation. Achieve your goals with expert guidance.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Our_Trainers.html">Our Trainers</a></li>
+                    <li><a href="Membership_Plans.html">Membership Plans</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="Workout_Programs.html">Strength Training</a></li>
+                    <li><a href="Workout_Programs.html">Weight Loss</a></li>
+                    <li><a href="Workout_Programs.html">Muscle Building</a></li>
+                    <li><a href="Our_Services.html">Cardio & Yoga</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📍 Main Road, Pune, MH</li>
+                    <li>📞 +91 98765 43210</li>
+                    <li>✉️ fitzonefitness@gmail.com</li>
+                    <li>⏰ Mon - Sat: 6 AM - 10 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FITZONE FITNESS. All rights reserved.</p>
+            <p>Designed for peak athletic performance.</p>
+        </div>
+    </footer>
 </body>
 </html>
