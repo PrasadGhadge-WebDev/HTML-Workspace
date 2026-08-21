@@ -173,6 +173,29 @@ header {
     transform: translateY(-2px);
 }
 
+.nav-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.nav-back-btn:hover {
+    background: var(--primary);
+    color: var(--bg-dark) !important;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
 /* Mobile Nav Toggle */
 .mobile-toggle {
     display: none;
